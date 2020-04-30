@@ -1,0 +1,807 @@
+body,html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Times New Roman", Times, serif;
+	background-color: rgb(12,16,39);
+	position: relative;
+}
+
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+
+#container{
+	position: relative;
+}
+
+
+#navigation{
+	padding: 10px;
+}
+
+
+/*Navigation*/
+.logo{
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+}
+
+.logo img{
+	width: 40%;
+	margin-right: -20%; 
+}
+
+.logo h3{
+	color: #FFF;
+	width: 60%;
+	text-align: right;
+	text-align: center;
+}
+
+.searchProfile{
+	box-sizing: border-box;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 30%;
+	width: 70%;
+}
+
+
+/*Search Profile*/
+#search-box{
+	background-color: #12193e; 
+	width: 60%;
+	padding: 2%;
+	padding-right: 0;
+	border-radius: 15px;
+	position: relative;
+}
+
+
+#search-box input{
+	background-color: #12193e;
+	padding: 1%;
+	margin-left: 1%;
+	width: 75%;
+	height: 15px;
+	border: none;
+	color: white;
+	border-radius: 15px;
+}
+
+#search-box input:focus{
+	outline: none;
+	color: white;
+}
+
+
+.searchProfile i{
+	color: #FFF;
+	font-weight: 400;
+}
+
+.fa-bell{
+	font-size: 20px;
+}
+
+.searchProfile .profile{
+	background-image: url("Images/Shaik-Avaies.jpeg");
+	border-radius: 50%;
+	height: inherit;
+	height: 50px;
+	width: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/*MainPage*/
+
+
+/*Home*/
+#mainPage{
+	width: 60%;
+	padding-left: 8%;
+	padding-top: 2%;
+}
+
+
+.home{
+	justify-content: space-between;
+}
+
+
+.home .div1{
+	background: url(Images/majli.webp); 
+	background-color: lightgreen;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border-radius: 5%;
+	box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.1);
+}
+
+.home .div2{
+	background: url(Images/GendaPhool.jpg); 
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border-radius: 5%;
+	box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.1);
+}
+
+.home .div3{
+	background: url(Images/weekend.webp); 
+	background-color: orange;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border-radius: 5%;
+	box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.1);
+}
+
+.home div{
+	height: 200px;
+	width: 31%;
+	background-blend-mode: multiply;
+	transition: transform 0.5s;
+}
+
+
+.home div:hover{
+	transform: scale(1.1);
+}
+
+
+/*Latest Release*/
+.heading{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #F2F2F3;
+	font-weight: 600;
+	text-align: start;
+	text-decoration: none solid rgb(255,255,255);
+}
+
+.latest-release{
+	margin-top: 5%;
+}
+.lrmain{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.lrdiv{
+	height: 150px;
+	width: 49%;
+	justify-content: space-between;
+}
+
+.photo{
+	flex-grow: 1;
+	padding: 1%;
+	text-align: center;
+}
+
+.photo img{
+	height: 80%;
+	width: auto;
+	opacity: 0.5;
+}
+
+.songName{
+	padding: 5%;
+	vertical-align: middle;
+	flex-grow: 3;
+}
+
+.name{
+	font-weight: 600;
+	color: #EDEEEF;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+
+.date{
+	color: #D4D4D8;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.dropDown{
+	flex-grow: 1;
+	vertical-align: top;
+	text-align: right;
+}
+
+.dropDown p{
+	color: #B3B3B3;
+	font-size: 20px;
+	width: auto;
+}
+
+.dropDown i{
+	color: #93A8B3;
+	font-size: 20px;
+	width: auto;
+}
+
+.latest-hindi{
+	padding-bottom: 15%;
+}
+
+
+
+
+/*Popular Artists*/
+.popular-artist{
+	margin-top: 5%;
+}
+
+#pamain{
+	justify-content: space-between;
+}
+
+#pamain img{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.padiv{
+	text-align: center;
+}
+
+
+/*Stations*/
+.stations{
+	margin-top: 5%;
+	background-color: #101642; 
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	height: 150px; 
+	width: auto;
+}
+
+.stations div{
+	height: 90px; 
+	width: 90px;
+	border-radius: 50%;
+	position: relative;
+	background-size: contain;
+	background-position: fixed;
+	background-repeat: no-repeat;
+}
+
+.sdiv1{
+	background-image: url("Images/Sad.webp");
+
+}
+
+.sdiv2{
+	background-image: url("Images/Dance.webp");
+}
+
+.sdiv3{
+	background-image: url("Images/Sufi.webp");
+}
+
+.sdiv4{
+	background-image: url("Images/Retro.webp");
+}
+
+.sdiv5{
+	background-image: url("Images/Trip.webp");
+}
+
+.sdiv6{
+	background-image: url("Images/Adventure.webp");
+}
+
+
+
+.stations div h3{
+	position: absolute;
+	top: 18%;
+	left: 30%;
+}
+
+.stations img{
+	height: 120px;
+	width: 150px;
+}
+
+.stations div img{
+	border-radius: 50%;
+	height: 90px; 
+	width: 90px;
+}
+
+
+
+/*Types*/
+.types{
+	margin-top: 5%;
+	justify-content: space-between;
+}
+
+.types div{
+	height: 170px; 
+	width: 32%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+}
+
+.tdiv1{
+	background-image: url(Images/party4.jpg);
+}
+
+.tdiv2{
+	background-image: url(Images/Electric4.jpg);
+}
+
+.tdiv3{
+	background-image: url(Images/Road6.jpg);
+}
+
+.types div h3{
+	color: white;
+	font-size: 1.5em;
+}
+
+
+
+
+/*Latest-English*/
+.latest-english{
+	margin-top: 5%;
+}
+.lediv{
+	justify-content: space-between;
+}
+
+.lediv div img{
+	height: 125px; 
+	width: 90%;
+}
+
+
+
+
+/*SidePage*/
+#sidePage{
+	margin-right: 3%;
+	padding: 3%;
+	width: 25%;
+
+}
+
+#sidePage header{
+	vertical-align: bottom;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+#sidePage header div h2{
+	color: #fff;
+}
+
+.queue{
+	width: 30%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.queue h3{
+	color: #50e3c2;
+}
+
+.queue i{
+	color: #50e3c2; 
+}
+
+
+.image{
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.image .content{
+	width: 80%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.content p{
+	color: #93a8b3;
+}
+
+.content .queueSong{
+	width: 50%;
+}
+
+.queueSong h3{
+	color: #fcfefe;
+	font-weight: 900;
+}
+
+.queueSong p{
+	margin-top: -1em;
+}
+
+
+.image img{
+	width: 60px;
+}
+
+.love{
+	color: #93a8b3;
+}
+
+
+
+
+/*Footer*/
+footer{
+	bottom: 0;
+	left: 0;
+	/*top: 86vh;*/
+	width: 100%;
+	position: fixed;
+	background-color: #282828;
+	color:  white;
+	justify-content: space-around;
+}
+
+#songImage{
+	width: 22%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#songImage img{
+	height: 70px; 
+}
+
+#songImage h3{
+	font-weight: 200;
+}
+
+#songImage p{
+	color: #9B9B9B;
+}
+
+#songImage i{
+	margin-top: -2em;
+	color: #9B9B9B;
+}
+
+
+#audio-controls{
+	width: 50%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.acdiv1{
+	flex-grow: 2;
+}
+
+.acdiv2{
+	flex-grow: 1;
+}
+
+.controls{
+	height: 50px;
+	margin: auto;
+	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: -0.8em;
+}
+
+.controls i{
+	font-weight: 300;
+	color: #B3B3B3;
+}
+
+#pause{
+	font-weight: 100;
+	color: white;
+}
+
+#controlbarrail{
+	width: 75%;
+	height: 5px;
+	background-color: #404040;
+	position:  relative;
+	border-radius: 15px;
+}
+
+#controlbarfill{
+	width: 20%;
+	height: 5px;
+	background-color: #33E583;	
+}
+
+#ball{
+	top: 0;
+	left: 20%;
+	width: 15px;
+	height: 15px;
+	margin-top: -0.2em;
+	position:  absolute;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.bar{
+	justify-content: space-around;
+	align-items: center;
+}
+
+#sound-controls{
+	width: 20%;
+	align-items: center;
+}
+
+#sound-controls i{
+	color: #9B9B9B;
+	padding: 15px; 
+}
+
+#sound-controls #controlbarfill{
+	background-color: #91D142;
+}
+
+#sound-controls #ball{
+	margin-top: -0.3em;
+	height: 18px;
+	width: 18px;;
+}
+
+
+
+/*Media Queries*/
+@media (max-width: 1155px){
+	#sidePage{
+		flex-wrap: wrap;
+		margin-left: 1%;
+	}
+
+	.popular-artist .padiv6{
+		display: none;
+	}
+
+	.stations .sdiv6{
+		display: none;
+	}
+}
+
+@media (max-width: 1052px){
+	footer{
+		/*top:86vh;*/
+	}
+	#sound-controls{
+		display: none;
+	}
+	#songImage{
+		width: 30%;
+	}
+
+	.latest-english .lediv6{
+		display: none;
+	}
+
+	.latest-english .lediv1{
+		display: none;
+	}
+
+	.latest-hindi .lediv1{
+		display: none;
+	}
+
+	.latest-hindi .lediv6{
+		display: none;
+	}
+
+	.popular-artist .padiv1{
+		display: none;
+	}
+
+	.stations .sdiv5{
+		display: none;
+	}
+
+	#sidePage img{
+		width: 50px;
+	}
+
+	#sidePage h3{
+		font-weight: 400;
+	}
+}
+
+@media (max-width: 794px){
+	#pamain{
+		flex-wrap: wrap;
+	}
+
+	.padiv4{
+		display: none;
+	}
+	#sidePage{
+		padding-right: 0;
+		font-size: 15px;
+	}
+	.stations .sdiv2{
+		display: none;
+	}
+	.types{
+		flex-wrap: wrap;
+	}
+	.types div{
+		width: 48%;
+	}
+	.tdiv1{
+		display: none;
+	}
+	.lediv2{
+		display: none;
+	}
+	.latest-release div img{
+		height: 90px;
+	}
+	footer{
+		/*top: 87vh;*/
+	}
+	#songImage{
+		display: none;
+	}
+	#audio-controls{
+		width: 100%;
+	}
+	#sidePage{
+		margin-right: 5px;
+		width: 30%;
+	}
+}
+
+@media (max-width: 700px){
+	.logo{
+		display: none;
+	}
+	#sidePage{
+		display: none;
+	}
+	.searchProfile{
+		width: 100%;
+		margin: 0 auto; 
+		padding:0;
+		justify-content: space-around;
+	}
+	#search-box{
+		height: 15px;
+	}
+	#mainPage{
+		padding: 1%;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.lrdiv .photo{
+		padding: 1%;
+		size: 90px;
+	}
+	.lrdiv .songName{
+		font-size: 5px;
+	}
+	footer{
+		padding-left: 1%;
+		padding-bottom: 2%;
+	}
+
+	.heading{
+		font-size: 16px;
+	}
+
+	.name, .date{
+		font-size: 13px;
+	}
+	#pamain{
+		justify-content: space-around;
+	}
+	.latest-hindi{
+		padding-bottom: 18%;
+	}
+}
+
+.popular-artist img{
+	transition: transform; 
+	transition-duration: .5s;
+}
+
+.popular-artist img:hover{
+	transform: rotate(-10deg) scale(1.1); 
+}
+
+
+.content img{
+	transition-duration: 0.5s;
+} 
+
+.content img:hover{
+	transform: scale(1.1);
+}
+
+
+.types .tdiv1{
+	background-color: #D79265;
+}	
+.types .tdiv2{
+	background-color: #4279ED;
+}
+.types .tdiv3{
+	background-color: #C4A1C6;
+}
+
+.types div{
+	transition-property: transform;
+	transition-duration: 0.5s;
+	background-blend-mode: soft-light;
+}
+.types div:hover{
+	transform: scale(1.05);
+}
+
+
+.stations .sdiv1{
+	background-color: #E28A80;
+}
+.stations .sdiv2{
+	background-color: #95806D;
+}
+.stations .sdiv3{
+	background-color: #4F5A72;
+}
+
+.stations .sdiv4{
+	background-color: #777D85;
+}
+.stations .sdiv5{
+	background-color: #6775BA;
+}
+
+.stations .sdiv6{
+	background-color: #AF7837;
+}
+
+.stations div{
+	background-blend-mode: saturation;
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+.stations div:hover{
+	transform: scale(0.9);
+}
+
+
+
+
